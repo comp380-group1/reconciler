@@ -19,7 +19,7 @@ public class Run
 		for (int i = 0; i < input.size(); i++)
 			System.out.println("ID: " + input.get(i).getId() + "\tBalance: " + input.get(i).getBalance());
 		System.out.println("---------------------------------------------------------");
-		Reconciler.Reconcile(input, output);
+		Reconciler.reconcile(input, output);
 		for (int i = 0; i < output.size(); i++)
 			System.out.println("From: " + output.get(i).getFrom() + "\tTo: " + output.get(i).getTo() + "\tAmount: " + output.get(i).getAmount());
 		System.out.println("---------------------------------------------------------");
